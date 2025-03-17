@@ -66,7 +66,7 @@
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  [       │  ]       │  \       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
+            HRML(A,     S,         D,         F)         &kp PRCNT      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  {       │  }       │ |        │
             &kp N2     &trans     &trans     &trans     &trans         &kp UNDER   &kp PLUS  &kp LBRC   &kp RBRC   &kp PIPE
