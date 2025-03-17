@@ -91,7 +91,7 @@
            &kp TAB     &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ESC      │          │          │          │PROFILE 1 │   │          │          │          │          │          │
-           &&trans     &trans     &trans    &bt BT_SEL 1    &kp LEFT   HRMR(DOWN, UP,        LEFT,        ENTER)
+            &trans     &trans     &trans    &bt BT_SEL 1    &kp LEFT   HRMR(DOWN, UP,        LEFT,        ENTER)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
