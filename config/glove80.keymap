@@ -344,12 +344,12 @@ endif {
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                             &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans                                                    &trans          &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans                                                    &trans          &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &kp F13  &trans                                                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans                  &trans          &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                             &trans                    &trans                     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans                                                    &trans          &trans                    &trans                     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans                                                    &trans          &trans                    &trans                     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &kp F13  &trans                                                    &kp LEFT_ARROW  &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans                    &trans                     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans                  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans     &trans  &trans
             >;
         };
     };
