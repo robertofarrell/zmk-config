@@ -100,7 +100,7 @@
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    HYPR(H)    HYPR(J)    HYPR(K)    HYPR(L)    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &sys_reset &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     HYPR(M)    &trans     &trans     &sys_reset
+            &sys_reset &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     HYPR(M)    &kp F13    &trans     &sys_reset
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
