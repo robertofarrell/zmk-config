@@ -11,6 +11,11 @@
 #define BR_PRV &kp LS(LG(LBKT))
 #define BR_NXT &kp LS(LG(RBKT))
 
+// Macos window iteration
+#define WIN_NXT &kp LG(GRAVE)
+
+#define HYPR(k1) &kp LG(LA(LC(LS(k1))))
+
 / {
     behaviors {
         ht: hold_tap {
@@ -61,7 +66,7 @@
             &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     BR_PRV     BR_NXT     &trans     &trans
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     BR_PRV     BR_NXT     &trans     WIN_NXT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &mo 3     &mo 3
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -89,13 +94,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     HYPR(I)    &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    HYPR(H)    HYPR(J)    HYPR(K)    HYPR(L)    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &sys_reset &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &sys_reset
+            &sys_reset &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     HYPR(M)    &trans     &trans     &sys_reset
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
