@@ -8,6 +8,9 @@
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RSHFT k2  &ht RALT k3  &ht RCTRL k4
+#define ZSHFT &ht LSHFT Z
+#define SLSHFT &ht LSHFT FSLH
+
 #define BR_PRV &kp LS(LG(LBKT))
 #define BR_NXT &kp LS(LG(RBKT))
 
@@ -49,7 +52,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            ZSHFT      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    SLSHFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp BSPC   &lt 2 TAB      &lt 3 ENTER &lt 1 SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
